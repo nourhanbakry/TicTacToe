@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPlayerActivity"
+    android:background="@drawable/pagebkg">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="@dimen/_20dp"
+        android:layout_margin="@dimen/_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_margin="@dimen/_30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/lavender"
+                android:textSize="40sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_nplayers_name"/>
+            <EditText
+                style="@style/CustomEditTex"
+                android:id="@+id/player_one_text_name"
+                android:layout_marginVertical="@dimen/_20dp"
+                android:drawableStart="@drawable/ic_xicon"
+                android:hint="@string/enter_player_one_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                style="@style/CustomEditTex"
+                android:id="@+id/player_two_text_name"
+                android:layout_marginBottom="@dimen/_20dp"
+                android:drawableStart="@drawable/ic_oicon"
+                android:hint="@string/enter_player_two_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/start_game_btn"
+                style="@style/CustomButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

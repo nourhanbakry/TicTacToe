@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start_game">START GAME</string>
+    <string name="enter_player_two_name">Enter player Two Name</string>
+    <string name="enter_player_one_name">Enter player One Name</string>
+    <string name="enter_nplayers_name">ENTER \nPLAYERS NAME</string>
+</resources>

@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TicTacToe" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="CustomEditTex">
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">text</item>
+        <item name="android:background">@drawable/lavander_border</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/lavender</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+    <style name="PlayerNameText">
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/lavender</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="PlayerNamesFrame">
+        <item name="android:layout_margin">@dimen/_20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/white_box</item>
+        <item name="android:padding">@dimen/_10dp</item>
+    </style>
+    <style name="CustomButtonStyle">
+        <item name="android:backgroundTint">@color/lavender</item>
+        <item name="android:padding">13dp</item>
+        <item name="android:text">@string/start_game</item>
+
+    </style>
+    <style name="Theme.TicTacToe" parent="Base.Theme.TicTacToe" />
+</resources>
