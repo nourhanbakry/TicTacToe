@@ -157,10 +157,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         boolean responce= false;
          for (int i=0;i<winningPlaces.size();i++){
              int[] winningPlace = winningPlaces.get(i);
-             if(winningPlace[0]== currentPlayer&& winningPlace[1] == currentPlayer&& winningPlace[2]==currentPlayer){
+             if(positions[winningPlace[0]]== currentPlayer&& positions[winningPlace[1]]== currentPlayer&& positions[winningPlace[2]]==currentPlayer){
                   responce = true;
              }
-             responce =false;
          }
         return responce;
     }
